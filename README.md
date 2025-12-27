@@ -11,7 +11,7 @@ This repository reproduces the methodology described in the research paper **"MT
 
 ---
 
-## 📖 Overview
+##  Overview
 
 Text embeddings are the foundation of modern NLP, powering search engines, recommendation systems, and clustering algorithms. However, evaluating them requires more than just measuring similarity. 
 
@@ -23,14 +23,14 @@ Text embeddings are the foundation of modern NLP, powering search engines, recom
 
 This project implements the evaluation pipelines for **all 8 task categories** defined in the original benchmark, providing a standalone codebase to benchmark any `sentence-transformers` compatible model.
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Complete Coverage**: Implements evaluators for all 8 MTEB task categories: Classification, Clustering, Pair Classification, Reranking, Retrieval, STS, Summarization, and Bitext Mining.
 *   **Modular Design**: Clean separation of `Tasks`, `Evaluators`, and `Models`, making it easy to add new datasets or metrics.
 *   **Real-World Datasets**: Integrates seamlessly with the **Hugging Face Hub** to load standard benchmarks like GLUE (STS-B, QQP), Banking77, and 20 Newsgroups.
 *   **Standardized Metrics**: Calculates strict academic metrics including Spearman Correlation, V-Measure, Accuracy, F1, MAP, and nDCG@10.
 
-## 📊 Supported Tasks & Metrics
+##  Supported Tasks & Metrics
 
 | Task Category | Dataset Implemented | Evaluation Metric | Description |
 | :--- | :--- | :--- | :--- |
@@ -43,7 +43,7 @@ This project implements the evaluation pipelines for **all 8 task categories** d
 | **Bitext Mining** | `OpusBooks` (En-Fr) | F1 Score | Mining parallel sentence pairs from two languages. |
 | **Summarization** | *Simulated* | Spearman Correlation | Correlation between embedding similarity and human scores. |
 
-## 🛠️ Installation
+##  Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -57,7 +57,7 @@ This project implements the evaluation pipelines for **all 8 task categories** d
     pip install sentence-transformers datasets scikit-learn scipy numpy
     ```
 
-## ⚡ Usage
+##  Usage
 
 The main entry point is `run_benchmark.py`. By default, it benchmarks the lightweight and popular `all-MiniLM-L6-v2` model.
 
@@ -88,7 +88,7 @@ To benchmark a different model (e.g., `bert-base-uncased`, `intfloat/e5-large`),
 model_name = 'intfloat/e5-small-v2' 
 ```
 
-## 📊 Performance Comparison
+##  Performance Comparison
 
 The following table compares the results obtained by this implementation using the `all-MiniLM-L6-v2` model against the official averages reported in the MTEB research paper (**Table 1**).
 
@@ -109,7 +109,7 @@ The following table compares the results obtained by this implementation using t
 *   **Model Strengths**: The model performs exceptionally well on Semantic Similarity (STS) and Reranking, exceeding the official average on these specific datasets.
 *   **Architecture Confirmation**: The alignment across Retrieval and Clustering tasks validates that the `MTEBModel` wrapper correctly handles embeddings for both symmetric and asymmetric tasks.
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 mteb-implementation/
@@ -122,15 +122,14 @@ mteb-implementation/
 └── README.md           # Documentation
 ```
 
-## 📜 References
+##  References
 
 *   **Original Paper**: [MTEB: Massive Text Embedding Benchmark](https://arxiv.org/abs/2210.07316) (Muennighoff et al., 2022).
 *   **Sentence Transformers**: [sbert.net](https://www.sbert.net)
 *   **Hugging Face Datasets**: [huggingface.co/datasets](https://huggingface.co/datasets)
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you'd like to add support for more datasets (e.g., MSMARCO for Retrieval) or new model architectures, please submit a Pull Request.
 
----
-*Created for educational and benchmarking purposes.*
+

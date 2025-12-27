@@ -9,7 +9,7 @@ A comprehensive and modular implementation of the **Massive Text Embedding Bench
 
 This repository reproduces the methodology described in the research paper :
 > **[MTEB: Massive Text Embedding Benchmark](https://arxiv.org/abs/2210.07316)**
->  * Niklas Muennighoff, Nouamane Tazi, Loïc Magne, Nils Reimers 
+> Niklas Muennighoff, Nouamane Tazi, Loïc Magne, Nils Reimers 
 
 Enabling the rigorous evaluation of text embedding models across **8 diverse natural language processing tasks**.
 

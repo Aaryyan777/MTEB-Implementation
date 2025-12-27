@@ -5,9 +5,13 @@
 ![Status](https://img.shields.io/badge/Status-Complete-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-A comprehensive, modular, and educational implementation of the **Massive Text Embedding Benchmark (MTEB)** evaluation framework. 
+A comprehensive and modular implementation of the **Massive Text Embedding Benchmark (MTEB)** evaluation framework. 
 
-This repository reproduces the methodology described in the research paper **"MTEB: Massive Text Embedding Benchmark"** (Muennighoff et al., 2022), enabling the rigorous evaluation of text embedding models across **8 diverse natural language processing tasks**.
+This repository reproduces the methodology described in the research paper :
+> **[MTEB: Massive Text Embedding Benchmark](https://arxiv.org/abs/2210.07316)**
+> *Niklas Muennighoff, Nouamane Tazi, Loïc Magne, Nils Reimers*
+
+Enabling the rigorous evaluation of text embedding models across **8 diverse natural language processing tasks**.
 
 ---
 
